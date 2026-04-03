@@ -1,0 +1,149 @@
+:root {
+    /* Typography */
+    --fs-level1: 2.25rem;
+    --fs-level2: 1.2rem;
+    --fs-level3: 1rem;
+    
+    /* Font - weight */
+    --fw-bold: 900;
+    --fw-light: 400;
+    
+    /* Text - color */
+    --txt-color-primary: #121212;  /* Charcoal Gray */
+    --txt-color-secondary: #0a0a0a; /* Rich Black */
+}
+
+/* Box - sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Margin - reset */
+body,
+h1, h2, h3, h4, h5, h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make img elements easy to work with */
+img,
+picture {
+    max-width: 100%;
+}
+
+/* Make form elements easy to work with */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+}
+
+/* remove animations for websites that opted out animation */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.img-circular {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.img-cta-icon {
+    width: 2.2rem;
+    transition: all 0.1s ease-in;
+}
+
+.padding-lr {
+  padding-left:  1.5rem;
+  padding-right:  1.5rem;
+}
+
+.padding-tb {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.margin-bt {
+    margin-bottom: 0.75rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.2rem;
+}
+
+header {
+    justify-content: space-between;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0.85rem 1.5rem;
+    position: sticky;
+    background-color: snow;
+    top: 0;
+    z-index: 1000;
+}
+
+#oldgram-logo {
+    width: 8rem;
+    height: 3rem;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+.post-info {
+    gap: 0.85rem;
+    padding: 1rem 1.5rem;
+}
+
+.post-info h2 {
+    font-size: var(--fs-level2);
+    margin-bottom: 0.2rem;
+}
+
+.post-info p {
+    font-size: 1rem;
+}
+
+.cta-icon {
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.img-cta-icon:hover,
+.img-cta-icon:focus{
+   width: 2.4rem;
+   background-color: snow;
+}
+
+/* Keep scrolling but remove scroller */
+.element::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+    padding: 0;
+}
